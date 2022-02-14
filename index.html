@@ -12,92 +12,130 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
     <link href="./resources/css/globalStyles.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-        <section>
-            <h2>Name</h2>
-            Nitheesh Prabu Shanmugasundaram, Software Engineer at Navis, Chennai, Tamil Nadu, India
+    <!--<div>-->
+    <!--    <section>-->
+    <!--        <h2>Work Experience (timeline)</h2>-->
+    <!--        <b>hi</b>-->
+    <!--        <i><b>hi</b></i>-->
+    <!--        <i>hi</i>-->
+    <!--        <p>hi</p>-->
+    <!--        <ul>-->
+    <!--            <li>Navis, 2yrs 8 mos</li>-->
+    <!--            <ul>-->
+    <!--                <li>Software Engineer, Full-time, Oct 2021-Present, 5 mos, Chennai, Tamil Nadu, India</li>-->
+    <!--                <li>-->
+    <!--                    Associate Software Engineer, Full-time, Jul 2019-Oct 2021, 2 yrs 4mos, Chennai, Tamil Nadu,-->
+    <!--                    India-->
+    <!--                </li>-->
+    <!--            </ul>-->
+    <!--            <li>-->
+    <!--                Software Development Intern, ADYA SPORTS TECH PRIVATE LIMITED, Jun 2018 - Sep 2018 · 4 mos, Chennai-->
+    <!--            </li>-->
+    <!--            <li>-->
+    <!--                Web Development Intern, Spini, Jun 2017 - Aug 2017 · 3 mos, Chennai, Tamil Nadu, India-->
+    <!--            </li>-->
+    <!--            <li>-->
+    <!--                Product Development Intern, Hasura, May 2017 - Aug 2017 · 4 mos, Chennai, Tamil Nadu, India-->
+    <!--            </li>-->
+    <!--        </ul>-->
+    <!--    </section>-->
+    <!--    <section>-->
+    <!--        <h2>Education (timeline)</h2>-->
+    <!--        <ul>-->
+    <!--            <li>-->
+    <!--                SSN College of Engineering-->
+    <!--                Bachelor of Technology, Information Technology-->
+    <!--                2015 - 2019-->
+    <!--                Grade: CGPA 8.56-->
+    <!--            </li>-->
+    <!--            <li>-->
+    <!--                Devi Academy Senior Secondary School-->
+    <!--                Classes 11 and 12, Computer Science-->
+    <!--                2013 - 2015-->
+    <!--                Grade: 94.8%-->
+    <!--            </li>-->
+    <!--            <li>-->
+    <!--                Devi Academy Senior Secondary School-->
+    <!--                Classes 9 and 10-->
+    <!--                2011 - 2013-->
+    <!--                Grade: CGPA 9-->
+    <!--            </li>-->
+    <!--        </ul>-->
+    <!--    </section>-->
+    <!--    <section>-->
+    <!--        <h2>Projects showcase (scrollable gallery?/parallax scroll?)</h2>-->
+    <!--        <ul>-->
+    <!--            <li>Pinky promise - eth dApp (Source: https://github.com/2020mt93512/blockchain-assignment-pinky-promise)</li>-->
+    <!--            <li>LocalWire - ionic/firebase cross-platform app (Source: https://github.com/2020mt93512/cpad-a2-group6-localwire, Demo: https://localwire.vercel.app/)</li>-->
+    <!--            <li>Ace card game (Demo: https://ace-card-game.herokuapp.com/)</li>-->
+    <!--        </ul>-->
+    <!--    </section>-->
+    <!--    <section>-->
+    <!--        <h2>Skills</h2>-->
+    <!--        <h3>Languages</h3>-->
+    <!--        JavaScript, TypeScript, C++, Java, Python-->
+    <!--        <h3>Front-End</h3>-->
+    <!--        React, React Native, Vue JS, Flutter, Ionic, HTML5, CSS-->
+    <!--        <h3>Back-End</h3>-->
+    <!--        Spring, NodeJS, Express, MongoDB-->
+    <!--        <h3>Frameworks/Libraries/SDKs</h3>-->
+    <!--        Redux, Storybook, Jest, Firebase, socketio-->
+    <!--        <h3>Tools</h3>-->
+    <!--        Git, npm, Postman, Docker, VS Code, Intellij, bash, Figma, slack-->
+    <!--        <h3>CI/CD</h3>-->
+    <!--        Jenkins, bitrise-->
+    <!--        <h3>Configuration</h3>-->
+    <!--        ESLint, Prettier, Parcel-->
+    <!--    </section>-->
+    <!--</div>-->
+    <div class="scroll-snap-container">
+        <section class="hero">
+            <div class="hero-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="hero-title">
+                <h1>Nitheesh Prabu Shanmugasundaram</h1>
+            </div>
+            <div class="hero-subtitle">
+                <h2>Software Engineer</h2>
+            </div>
+            <a href="#about">
+                <div class="mouse-scroll">
+                    <div class="mouse">
+                        <div class="mouse-in"></div>
+                    </div>
+                    <div>
+                        <span class="down-arrow-1"></span>
+                        <span class="down-arrow-2"></span>
+                        <span class="down-arrow-3"></span>
+                    </div>
+                </div>
+            </a>
         </section>
-        <section>
-            <h2>About</h2>
-            I am a highly motivated, detail-oriented and creative software engineer with 2 years 8 months of experience
-            in developing and maintaining cross-platform and web applications using React Native, Vue JS and ES6.
-            I am an avid coder and an enthusiastic learner. I always like to build things that are useful to the masses
-            and take great sense of pride in my work.
+        <section id="about" class="about">
+            <div class="about-title"><h1>About</h1></div>
+            <div class="content-wrapper">
+                <blockquote>
+                    <p>
+                        I am a highly motivated, detail-oriented and creative software engineer with 2 years 8 months of experience
+                        in developing and maintaining cross-platform and web applications using React Native, Vue JS and ES6.
+                        <br />
+                        <br />
+                        <br />
+                        I am an avid coder and an enthusiastic learner. I always like to build things that are useful to the masses.
+                    </p>
+                </blockquote>
+            </div>
         </section>
-        <section>
-            <h2>Work Experience (timeline)</h2>
-            <ul>
-                <li>Navis, 2yrs 8 mos</li>
-                <ul>
-                    <li>Software Engineer, Full-time, Oct 2021-Present, 5 mos, Chennai, Tamil Nadu, India</li>
-                    <li>
-                        Associate Software Engineer, Full-time, Jul 2019-Oct 2021, 2 yrs 4mos, Chennai, Tamil Nadu,
-                        India
-                    </li>
-                </ul>
-                <li>
-                    Software Development Intern, ADYA SPORTS TECH PRIVATE LIMITED, Jun 2018 - Sep 2018 · 4 mos, Chennai
-                </li>
-                <li>
-                    Web Development Intern, Spini, Jun 2017 - Aug 2017 · 3 mos, Chennai, Tamil Nadu, India
-                </li>
-                <li>
-                    Product Development Intern, Hasura, May 2017 - Aug 2017 · 4 mos, Chennai, Tamil Nadu, India
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education (timeline)</h2>
-            <ul>
-                <li>
-                    SSN College of Engineering
-                    Bachelor of Technology, Information Technology
-                    2015 - 2019
-                    Grade: CGPA 8.56
-                </li>
-                <li>
-                    Devi Academy Senior Secondary School
-                    Classes 11 and 12, Computer Science
-                    2013 - 2015
-                    Grade: 94.8%
-                </li>
-                <li>
-                    Devi Academy Senior Secondary School
-                    Classes 9 and 10
-                    2011 - 2013
-                    Grade: CGPA 9
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Projects showcase (scrollable gallery?/parallax scroll?)</h2>
-            <ul>
-                <li>Pinky promise - eth dApp (Source: https://github.com/2020mt93512/blockchain-assignment-pinky-promise)</li>
-                <li>LocalWire - ionic/firebase cross-platform app (Source: https://github.com/2020mt93512/cpad-a2-group6-localwire, Demo: https://localwire.vercel.app/)</li>
-                <li>Ace card game (Demo: https://ace-card-game.herokuapp.com/)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <h3>Languages</h3>
-            JavaScript, TypeScript, C++, Java, Python
-            <h3>Front-End</h3>
-            React, React Native, Vue JS, Flutter, Ionic, HTML5, CSS
-            <h3>Back-End</h3>
-            Spring, NodeJS, Express, MongoDB
-            <h3>Frameworks/Libraries/SDKs</h3>
-            Redux, Storybook, Jest, Firebase, socketio
-            <h3>Tools</h3>
-            Git, npm, Postman, Docker, VS Code, Intellij, bash, Figma, slack
-            <h3>CI/CD</h3>
-            Jenkins, bitrise
-            <h3>Configuration</h3>
-            ESLint, Prettier, Parcel
-        </section>
+        <section class="work-experience">work experience</section>
+        <section class="education">education</section>
+        <section class="projects">projects</section>
+        <section class="skills">skills</section>
     </div>
 </body>
 </html>
