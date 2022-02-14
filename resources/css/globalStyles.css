@@ -58,7 +58,7 @@ blockquote p {
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
-    /*scroll-snap-type: y mandatory;*/
+    scroll-snap-type: y mandatory;
     -ms-scroll-snap-type: mandatory;
     -ms-scroll-snap-points-y: snapInterval(0%, 100%);
     -ms-overflow-style: none;
@@ -110,6 +110,7 @@ blockquote p {
 .about > .about-title {
     font-size: 2rem;
     text-transform: uppercase;
+    text-align: left;
 }
 .about > .content-wrapper {
     width: 100%;
@@ -161,10 +162,32 @@ blockquote p {
     font-style: italic;
 }
 
+.work-exp::after,
+.work-exp::before {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: var(--color-mint);
+    bottom: -1.69rem;
+    z-index: 1;
+}
+.work-exp::before {
+    right: 50%;
+    transform: skew(0, 20deg);
+}
+.work-exp::after {
+    left: 50%;
+    transform: skew(0, -20deg);
+}
+
 .education {
     background: var(--color-accent-tertiary);
     color: var(--color-accent-secondary);
     scroll-snap-align: start;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+    margin-bottom: -10vw;
+    z-index: 4;
 }
 .education > .education-title {
     font-size: 2rem;
@@ -183,12 +206,40 @@ blockquote p {
     background: var(--color-tertiary-light);
     color: var(--color-white);
     scroll-snap-align: start;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
+    margin-bottom: -10vw;
+    z-index: 2;
+}
+.projects > .projects-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+.projects > .content-wrapper {
+    width: 100%;
+    flex: 0 auto;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    font-style: italic;
 }
 
 .skills {
     scroll-snap-align: start;
     background: var(--color-white-smoke);
     color: var(--color-black);
+    z-index: 1;
+}
+.skills > .skills-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+.skills > .content-wrapper {
+    width: 100%;
+    flex: 0 auto;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    font-style: italic;
 }
 
 /* --------------------------------
